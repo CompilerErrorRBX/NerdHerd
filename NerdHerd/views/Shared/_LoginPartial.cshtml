@@ -11,10 +11,13 @@
         </li>
         <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
     </ul>*@
+
 		<ul class="right hide-on-small-and-down">
 			<li><a class="waves-effect waves-light dropdown-button" href="#" title="Your Inbox" data-activates="notifications_dropdown"><i class="material-icons">inbox</i></a></li>
 			<li><a class="waves-effect waves-light dropdown-button" href="#" title="Your Account" data-activates="account_dropdown"><i class="material-icons">person</i></a></li>
 		</ul> <!-- End user controls -->
+
+
 	}
 }
 else
@@ -24,7 +27,7 @@ else
         <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
     </ul>*@
 	<ul class="right hide-on-small-and-down">
-					<li><a class="waves-effect waves-light dropdown-button" href="#" title="Your Inbox" data-activates="notifications_dropdown"><i class="material-icons">inbox</i></a></li>
-					<li><a class="waves-effect waves-light dropdown-button" href="#" title="Your Account" data-activates="account_dropdown"><i class="material-icons">person</i></a></li>
-				</ul> <!-- End user controls -->
+		<li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink", @class= "waves-effect waves-light" })</li>
+		<li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "waves-effect waves-light" })</li>
+	</ul> <!-- End user controls -->
 }

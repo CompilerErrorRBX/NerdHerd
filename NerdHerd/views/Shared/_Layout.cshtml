@@ -17,7 +17,7 @@
 	<ul id="account_dropdown" class="dropdown-content">
 		<li><a href="#!"><i class="material-icons tiny">settings</i> Settings</a></li>
 		<li><a href="#!"><i class="material-icons tiny">account_circle</i> Account</a></li>
-		<li><a href="#!"><i class="material-icons tiny">clear</i> Log out</a></li>
+		<li><a href="#!"><i class="material-icons tiny">clear</i> Log off</a></li>
 	</ul>
 
 	<ul id="notifications_dropdown" class="dropdown-content">
@@ -34,10 +34,7 @@
 					<li><a class="waves-effect waves-light" href="../views/technicians.html"><b>The Nerds</b></a></li>
 					<li><a class="waves-effect waves-light" href="../views/jobs.html"><b>Tickets</b></a></li>
 				</ul> <!-- End page links -->
-				<ul class="right hide-on-small-and-down">
-					<li><a class="waves-effect waves-light dropdown-button" href="#" title="Your Inbox" data-activates="notifications_dropdown"><i class="material-icons">inbox</i></a></li>
-					<li><a class="waves-effect waves-light dropdown-button" href="#" title="Your Account" data-activates="account_dropdown"><i class="material-icons">person</i></a></li>
-				</ul> <!-- End user controls -->
+				@Html.Partial("_LoginPartial")
 			</div> <!-- End nav wrapper -->
 		</nav> <!-- End nav -->
 	</div> <!-- End fixed nav div -->
