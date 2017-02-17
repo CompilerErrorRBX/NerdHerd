@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Nerd Herd</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<!-- Include JQuery -->
+		<script src="../js/jquery-3.1.1.min.js"></script>
+
+		<!-- Include Site JavaScript -->
+		<script src="../js/site.js"></script>
+
+		<!-- Include user class -->
+		<script src="../js/objects/user.js"></script>
+
+		<link href="../css/colors.css" rel="stylesheet">
+		<link href="../css/site.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+
+	<body> <!-- Start body -->
+		<ul id="account_dropdown" class="dropdown-content">
+			<li><a href="#!"><i class="material-icons tiny">settings</i> Settings</a></li>
+			<li><a href="#!"><i class="material-icons tiny">account_circle</i> Account</a></li>
+			<li><a href="#!"><i class="material-icons tiny">clear</i> Log out</a></li>
+		</ul>
+
+		<ul id="notifications_dropdown" class="dropdown-content">
+			<li><a href="#!">Nothing interesting to report.</a></li>
+		</ul>
+
+		<div class="navbar-fixed">
+			<nav> <!-- Start nav -->
+				<div class="nav-wrapper">
+					<a class="brand-logo yellow-text center" href="../views/index.html" ><img class="brand-image" src="../images/NerdHerd.png" alt="..." width="36" height="36" /><b>Nerd Herd</b></a>
+					<ul class="left hide-on-med-and-down">
+						<li><a class="waves-effect waves-light" href="../views/index.html"><b>Home</b></a></li>
+						<li><a class="waves-effect waves-light" href="../views/technicians.html"><b>The Nerds</b></a></li>
+						<li><a class="waves-effect waves-light" href="../views/jobs.html"><b>Tickets</b></a></li>
+					</ul> <!-- End page links -->
+					<ul class="right hide-on-small-and-down">
+						<li><a class="waves-effect waves-light dropdown-button" href="#" title="Your Inbox"  data-activates="notifications_dropdown"><i class="material-icons">inbox</i></a></li>
+						<li><a class="waves-effect waves-light dropdown-button" href="#" title="Your Account" data-activates="account_dropdown"><i class="material-icons">person</i></a></li>
+					</ul> <!-- End user controls -->
+				</div> <!-- End nav wrapper -->
+			</nav> <!-- End nav -->
+		</div> <!-- End fixed nav div -->
+		
+		<header>
+			<div class="sheet backdrop">
+				<div class="row">
+					<div class="col s12 center-align">
+						<h1 class="white-text">Meet the Nerds</h1>
+						<h3 class="white-text">Experienced, professional.</h3>
+						<br />
+						<a class="btn white waves-effect" href="../views/jobs.html"><span class="blue-text text-darken-3"><strong>Create a Job Ticket</strong></span></a>
+					</div>
+				</div> <!-- End opening heading -->
+				<div class="container announcement">
+					<div class="row">
+						<div class="col s12 m10 l10 offset-m1 offset-l1">
+							<div class="sheet z-depth-3 center-on-small-only">
+								<span class="grey-text text-darken-1 news-title">Utilize Nerd Herd's top-of-the-line services today.</span>
+								<button class="btn-flat grey lighten-3 waves-effect"><span class="grey-text text-darken-4">Get Started</span></button>
+							</div>
+						</div>
+					</div>
+				</div> <!-- End announcement container -->
+				<div class="circuit"></div>
+			</div> <!-- End sheet backdrop -->
+		</header> <!-- End header -->
+		
+		<main>
+			<div class="spacer"></div>
+			<div id="users" class="container"></div>
+		</main> <!-- End main -->
+		
+		<footer class="page-footer">
+			<div class="container">
+				<div class="row center-on-small-only">
+					<h4 class="white-text">Contact Us</h4>
+					<ul>
+						<li>
+							<p><i class="material-icons tiny">location_on</i> 1 Opportunity Avenue Point Lookout, Missouri 65726</p>
+						</li>
+						<li>
+							<p><i class="material-icons tiny">phone</i> (888) 555-5555</p>
+						</li>
+						<li>
+							<p>
+								<i class="material-icons tiny">email</i> 
+								<a class="white-text" href="mailto:nerdherd@theherd.com">
+									nerdherd@theherd.com
+								</a>
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div> <!-- End footer body -->
+			<div class="footer-copyright">
+				<div class="container">
+					<small>
+						<i>
+							&copy; 2017 Nerd Herd
+						</i>
+					</small>
+				</div>
+			</div> <!-- End footer copyright -->
+		</footer> <!-- End footer -->
+		
+		<script>
+			$(function() {
+				new User({
+					name: 'Jim Buchan',
+					title: 'Associate Professor of Computer Science at College of the Ozarks',
+					biography: 'Saleman extraordinaire, probably the greatest thing since the slice of bread. I CANNOT over emphasize the importance of dip-n-dots.<br /><br />"That\'s cool as a moose and twice as hairy!" - Jim Buchan',
+					proficiencies: ['Teaching', 'Sales', 'Business', 'Public Speaking', 'HTML', 'CSS', 'Sales Training', 'SQL', 'BSing', 'ASP.NET', 'C#', 'Ingratiating', 'French', 'Singing', 
+					'Old Music Enthusiast', 'Good Husband'],
+					profile_link: 'https://www.linkedin.com/in/jimbuchan/',
+					email: 'buchan@cofo.edu',
+					thumbnail: '../images/technician5.jpg'
+				}).user_card.appendTo($('#users'));
+
+				new User({
+					name: 'Stephen Martin',
+					title: 'Web Developer at College of the Ozarks',
+					biography: '...',
+					proficiencies: ['HTML', 'CSS', 'JavaScript', 'iOS', 'Android', 'Windows', 'Mac'],
+					profile_link: 'https://www.linkedin.com/in/stephen-martin-203334104/',
+					email: 'stephenlmartin@student.cofo.edu',
+					thumbnail: '../images/technician1.jpg'
+				}).user_card.appendTo($('#users'));
+
+				new User({
+					name: 'Cody Loewen',
+					title: 'Writting Assistant at College of the Ozarks',
+					biography: 'A insatiable drive to learn new concepts. One day will own SpaceX.',
+					proficiencies: ['Stuff \'n Things'],
+					profile_link: '#',
+					email: 'codyjloewen@student.cofo.edu',
+					thumbnail: '../images/technician7.jpg'
+				}).user_card.appendTo($('#users'));
+
+
+				new User({
+					name: 'Caleb Gozé',
+					title: 'Help Desk Technician at College of the Ozarks',
+					biography: 'I am passionate about fixing broken, suffering computers. I will become one with them and liberate them.',
+					proficiencies: ['HTML', 'Windows', 'Mac'],
+					profile_link: 'https://www.linkedin.com/in/caleb-goz%C3%A9-a209a1108/',
+					email: 'calebpgoze@student.cofo.edu',
+					thumbnail: '../images/technician2.jpg'
+				}).user_card.appendTo($('#users'));
+
+				new User({
+					name: 'Katelynn Corkern',
+					title: 'Public Relations at College of the Ozarks',
+					biography: 'I am literally in LOVE with building web sites for Mr. Buchan... I LITERALLY cannot think of a better use of my time!',
+					proficiencies: ['HTML', 'Public Relations', 'Public Speaking'],
+					profile_link: 'https://www.linkedin.com/in/katelynn-corkern-75b660135/',
+					email: 'katelynnacorkern@student.cofo.edu',
+					thumbnail: '../images/technician3.jpg'
+				}).user_card.appendTo($('#users'));
+
+				new User({
+					name: 'Rachel Layng',
+					title: 'Bellstaff at College of the Ozarks',
+					biography: 'I like Rachel stuff!',
+					proficiencies: ['Happiness', 'Singing', 'Sassiness'],
+					profile_link: '#',
+					email: 'rachelalayng@student.cofo.edu',
+					thumbnail: '../images/technician6.jpg'
+				}).user_card.appendTo($('#users'));
+
+				new User({
+					name: 'Andrija Markovic',
+					title: 'Help Desk Technician at College of the Ozarks',
+					biography: 'I dunno, man.',
+					proficiencies: ['HTML', 'CSS', 'Windows', 'Android', 'Java'],
+					profile_link: 'https://www.linkedin.com/in/andrija-markovic-869534131/',
+					email: 'andrijamarkovic@student.cofo.edu',
+					thumbnail: '../images/technician4.jpg'
+				}).user_card.appendTo($('#users'));
+
+			});
+		</script>
+			
+	</body> <!-- End body -->
+
+</html>

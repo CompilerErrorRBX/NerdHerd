@@ -1,0 +1,246 @@
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\ApplicationInsights.config
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\roslyn\csc.exe
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\roslyn\System.Collections.Immutable.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\roslyn\vbc.exe
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\roslyn\VBCSCompiler.exe
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\roslyn\VBCSCompiler.exe.config
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\NerdHerd.dll.config
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\NerdHerd.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\NerdHerd.pdb
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Antlr3.Runtime.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\EntityFramework.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\EntityFramework.SqlServer.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.AI.Web.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.AI.WindowsServer.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.ApplicationInsights.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.Owin.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.Google.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.Web.Infrastructure.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Newtonsoft.Json.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Owin.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\System.Web.Helpers.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\System.Web.Mvc.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\System.Web.Optimization.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\System.Web.Razor.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\System.Web.WebPages.Deployment.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\System.Web.WebPages.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\System.Web.WebPages.Razor.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\WebGrease.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.AI.Web.xml
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.AI.WindowsServer.xml
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.ApplicationInsights.xml
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\System.Web.Helpers.xml
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\System.Web.Mvc.xml
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\System.Web.Optimization.xml
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\System.Web.Razor.xml
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\System.Web.WebPages.xml
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\System.Web.WebPages.Deployment.xml
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\System.Web.WebPages.Razor.xml
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Antlr3.Runtime.pdb
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Newtonsoft.Json.xml
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\EntityFramework.xml
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\EntityFramework.SqlServer.xml
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.Owin.xml
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.xml
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.Google.xml
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\obj\Debug\NerdHerd.csprojResolveAssemblyReference.cache
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\obj\Debug\NerdHerd.dll
+c:\users\163260\documents\visual studio 2015\Projects\NerdHerd\NerdHerd\obj\Debug\NerdHerd.pdb
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\ApplicationInsights.config
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\roslyn\csc.exe
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\roslyn\vbc.exe
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\roslyn\VBCSCompiler.exe
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\NerdHerd.dll.config
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\NerdHerd.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\NerdHerd.pdb
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Antlr3.Runtime.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\EntityFramework.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\EntityFramework.SqlServer.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.AI.Web.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.Owin.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Newtonsoft.Json.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Owin.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\System.Web.Helpers.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\System.Web.Mvc.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\System.Web.Optimization.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\System.Web.Razor.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\System.Web.WebPages.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\System.Web.WebPages.Razor.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\WebGrease.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.AI.Web.xml
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\System.Web.Helpers.xml
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\System.Web.Mvc.xml
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\System.Web.Optimization.xml
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\System.Web.Razor.xml
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\System.Web.WebPages.xml
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\System.Web.WebPages.Razor.xml
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Antlr3.Runtime.pdb
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Newtonsoft.Json.xml
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\EntityFramework.xml
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\EntityFramework.SqlServer.xml
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.Owin.xml
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.xml
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\obj\Debug\NerdHerd.csprojResolveAssemblyReference.cache
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\obj\Debug\NerdHerd.dll
+C:\Users\Stephen Martin\Desktop\NerdHerd\NerdHerd\obj\Debug\NerdHerd.pdb
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\ApplicationInsights.config
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\roslyn\csc.exe
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\roslyn\vbc.exe
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\roslyn\VBCSCompiler.exe
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\NerdHerd.dll.config
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\NerdHerd.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\NerdHerd.pdb
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Antlr3.Runtime.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\EntityFramework.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\EntityFramework.SqlServer.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.AI.Web.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.Owin.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Newtonsoft.Json.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Owin.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\System.Web.Helpers.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\System.Web.Mvc.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\System.Web.Optimization.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\System.Web.Razor.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\System.Web.WebPages.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\System.Web.WebPages.Razor.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\WebGrease.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.AI.Web.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\System.Web.Helpers.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\System.Web.Mvc.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\System.Web.Optimization.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\System.Web.Razor.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\System.Web.WebPages.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\System.Web.WebPages.Razor.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Antlr3.Runtime.pdb
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Newtonsoft.Json.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\EntityFramework.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\EntityFramework.SqlServer.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.Owin.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\obj\Debug\NerdHerd.csprojResolveAssemblyReference.cache
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\obj\Debug\NerdHerd.dll
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\obj\Debug\NerdHerd.pdb

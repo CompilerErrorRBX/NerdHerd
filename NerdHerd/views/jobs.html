@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Nerd Herd</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		
+		<!-- Include JQuery -->
+		<script src="../js/jquery-3.1.1.min.js"></script>
+
+		<!-- Include Site JavaScript -->
+		<script src="../js/site.js"></script>
+
+		<!-- Include Ticket.js -->
+		<script src="../js/objects/ticket.js"></script>
+
+		<link href="../css/colors.css" rel="stylesheet">
+		<link href="../css/site.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+	
+	<body> <!-- Start body -->
+
+		<ul id="account_dropdown" class="dropdown-content">
+			<li><a href="#!"><i class="material-icons tiny">settings</i> Settings</a></li>
+			<li><a href="#!"><i class="material-icons tiny">account_circle</i> Account</a></li>
+			<li><a href="#!"><i class="material-icons tiny">clear</i> Log out</a></li>
+		</ul>
+
+		<ul id="notifications_dropdown" class="dropdown-content">
+			<li><a href="#!">Nothing interesting to report.</a></li>
+		</ul>
+
+		<div class="navbar-fixed">
+			<nav> <!-- Start nav -->
+				<div class="nav-wrapper">
+					<a class="brand-logo yellow-text center" href="../views/index.html" ><img class="brand-image" src="../images/NerdHerd.png" alt="..." width="36" height="36" /><b>Nerd Herd</b></a>
+					<ul class="left hide-on-med-and-down">
+						<li><a class="waves-effect waves-light" href="../views/index.html"><b>Home</b></a></li>
+						<li><a class="waves-effect waves-light" href="../views/technicians.html"><b>The Nerds</b></a></li>
+						<li><a class="waves-effect waves-light" href="../views/jobs.html"><b>Tickets</b></a></li>
+					</ul> <!-- End page links -->
+					<ul class="right hide-on-small-and-down">
+						<li><a class="waves-effect waves-light dropdown-button" href="#" title="Your Inbox"  data-activates="notifications_dropdown"><i class="material-icons">inbox</i></a></li>
+						<li><a class="waves-effect waves-light dropdown-button" href="#" title="Your Account" data-activates="account_dropdown"><i class="material-icons">person</i></a></li>
+					</ul> <!-- End user controls -->
+				</div> <!-- End nav wrapper -->
+			</nav> <!-- End nav -->
+		</div> <!-- End fixed nav div -->
+		
+		<header>
+			<div class="sheet backdrop">
+				<div class="row">
+					<div class="col s12 center-align">
+						<h1 class="white-text">Got a Problem?</h1>
+						<h3 class="white-text">We've got solutions.</h3>
+						<br />
+						<a class="btn white waves-effect" href="../views/jobs.html"><span class="blue-text text-darken-3"><strong>Create a Job Ticket</strong></span></a>
+					</div>
+				</div> <!-- End opening header -->
+				<div class="circuit"></div>
+			</div> <!-- End sheet backdrop -->
+		</header> <!-- End header -->
+		
+		<main>
+			<div class="spacer"></div>
+			<div class="container">
+				<h3><i class="material-icons small">assignment</i> Your Tickets</h3>
+				<div id="tickets" class="row">
+					
+				</div>
+			</div>
+		</main> <!-- End main -->
+		
+		<footer class="page-footer">
+			<div class="container">
+				<div class="row center-on-small-only">
+					<h4 class="white-text">Contact Us</h4>
+					<ul>
+						<li>
+							<p><i class="material-icons tiny">location_on</i> 1 Opportunity Avenue Point Lookout, Missouri 65726</p>
+						</li>
+						<li>
+							<p><i class="material-icons tiny">phone</i> (888) 555-5555</p>
+						</li>
+						<li>
+							<p>
+								<i class="material-icons tiny">email</i> 
+								<a class="white-text" href="mailto:nerdherd@theherd.com">
+									nerdherd@theherd.com
+								</a>
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div> <!-- End footer body -->
+			<div class="footer-copyright">
+				<div class="container">
+					<small>
+						<i>
+							&copy; 2017 Nerd Herd
+						</i>
+					</small>
+				</div>
+			</div> <!-- End footer copyright -->
+		</footer> <!-- End footer -->
+		
+		<script>
+
+			new Ticket({
+				name: 'HDD Failure',
+				description: 'When I attempt to boot into Windows my it says that there is an imminent hard drive failure.',
+				technicians: ['Stephen Martin'],
+				status: 'In Progress',
+				bounty: '$25.00'
+			}).card.appendTo($('#tickets'));
+
+			new Ticket({
+				name: 'Broken Laptop',
+				description: 'My laptop will not turn on anymore!',
+				technicians: ['Andrija Markovic', 'Jim Buchan'],
+				status: 'In Review',
+			}).card.appendTo($('#tickets'));
+
+		</script>
+
+	</body> <!-- End body -->
+
+</html>

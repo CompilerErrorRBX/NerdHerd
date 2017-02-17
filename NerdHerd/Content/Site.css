@@ -1,0 +1,16 @@
+﻿body { /* Body styling. */
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+	margin: 0;
+
+} /* Body styling. */
+
+main {
+	flex: 1 0 auto;
+	z-index: 0;
+}
+
+header {
+	z-index: 0;
+}
