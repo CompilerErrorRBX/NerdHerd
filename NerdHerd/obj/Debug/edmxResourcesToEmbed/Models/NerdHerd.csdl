@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NerdHerdModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AspNetRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetUsers" Relationship="Self.AspNetUserRoles" FromRole="AspNetRoles" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaim">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUserClaims" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogin">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ProviderKey" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUserLogins" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+    <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetUserClaims" Relationship="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserClaims" />
+    <NavigationProperty Name="AspNetUserLogins" Relationship="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserLogins" />
+    <NavigationProperty Name="Technicians" Relationship="Self.FK_Technician_AspNetUsers" FromRole="AspNetUsers" ToRole="Technician" />
+    <NavigationProperty Name="AspNetRoles" Relationship="Self.AspNetUserRoles" FromRole="AspNetUsers" ToRole="AspNetRoles" />
+    <NavigationProperty Name="Tickets" Relationship="NerdHerdModel.FK_Ticket_AspNetUsers" FromRole="AspNetUser" ToRole="Ticket" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Ticket_Category" Relationship="NerdHerdModel.FK_Ticket_Category_Category" FromRole="Category" ToRole="Ticket_Category" />
+  </EntityType>
+  <EntityType Name="Proficiency">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="28" FixedLength="false" Unicode="false" />
+    <Property Name="technician_id" Type="Int32" />
+    <NavigationProperty Name="Technician" Relationship="Self.FK_Proficiency_Technician" FromRole="Proficiency" ToRole="Technician" />
+  </EntityType>
+  <EntityType Name="Social">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="icon" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Technician_Social" Relationship="Self.FK_Technician_Social_Social" FromRole="Social" ToRole="Technician_Social" />
+  </EntityType>
+  <EntityType Name="Technician">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="reputation" Type="Int32" />
+    <Property Name="thumbnail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="biography" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_Technician_AspNetUsers" FromRole="Technician" ToRole="AspNetUsers" />
+    <NavigationProperty Name="Proficiencies" Relationship="Self.FK_Proficiency_Technician" FromRole="Technician" ToRole="Proficiency" />
+    <NavigationProperty Name="Technician_Social" Relationship="Self.FK_Technician_Social_Technician" FromRole="Technician" ToRole="Technician_Social" />
+    <NavigationProperty Name="Ticket_Technician" Relationship="Self.FK_Ticket_Technician_Technician" FromRole="Technician" ToRole="Ticket_Technician" />
+  </EntityType>
+  <EntityType Name="Technician_Social">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="technician_id" Type="Int32" />
+    <Property Name="social_id" Type="Int32" />
+    <NavigationProperty Name="Social" Relationship="Self.FK_Technician_Social_Social" FromRole="Technician_Social" ToRole="Social" />
+    <NavigationProperty Name="Technician" Relationship="Self.FK_Technician_Social_Technician" FromRole="Technician_Social" ToRole="Technician" />
+  </EntityType>
+  <EntityType Name="Ticket">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="bounty" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="creator_id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="active" Type="Boolean" />
+    <NavigationProperty Name="Ticket_Technician" Relationship="Self.FK_Ticket_Technician_Ticket" FromRole="Ticket" ToRole="Ticket_Technician" />
+    <NavigationProperty Name="AspNetUser" Relationship="NerdHerdModel.FK_Ticket_AspNetUsers" FromRole="Ticket" ToRole="AspNetUser" />
+    <NavigationProperty Name="Ticket_Category" Relationship="NerdHerdModel.FK_Ticket_Category_Ticket" FromRole="Ticket" ToRole="Ticket_Category" />
+  </EntityType>
+  <EntityType Name="Ticket_Technician">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="technician_id" Type="Int32" />
+    <Property Name="ticket_id" Type="Int32" />
+    <NavigationProperty Name="Technician" Relationship="Self.FK_Ticket_Technician_Technician" FromRole="Ticket_Technician" ToRole="Technician" />
+    <NavigationProperty Name="Ticket" Relationship="Self.FK_Ticket_Technician_Ticket" FromRole="Ticket_Technician" ToRole="Ticket" />
+  </EntityType>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserClaims" Type="Self.AspNetUserClaim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaims">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserLogins" Type="Self.AspNetUserLogin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogins">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Technician_AspNetUsers">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="0..1" />
+    <End Role="Technician" Type="Self.Technician" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Technician">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Proficiency_Technician">
+    <End Role="Technician" Type="Self.Technician" Multiplicity="0..1" />
+    <End Role="Proficiency" Type="Self.Proficiency" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Technician">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Proficiency">
+        <PropertyRef Name="technician_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Technician_Social_Social">
+    <End Role="Social" Type="Self.Social" Multiplicity="0..1" />
+    <End Role="Technician_Social" Type="Self.Technician_Social" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Social">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Technician_Social">
+        <PropertyRef Name="social_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Technician_Social_Technician">
+    <End Role="Technician" Type="Self.Technician" Multiplicity="0..1" />
+    <End Role="Technician_Social" Type="Self.Technician_Social" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Technician">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Technician_Social">
+        <PropertyRef Name="technician_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ticket_Technician_Technician">
+    <End Role="Technician" Type="Self.Technician" Multiplicity="0..1" />
+    <End Role="Ticket_Technician" Type="Self.Ticket_Technician" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Technician">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Ticket_Technician">
+        <PropertyRef Name="technician_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ticket_Technician_Ticket">
+    <End Role="Ticket" Type="Self.Ticket" Multiplicity="0..1" />
+    <End Role="Ticket_Technician" Type="Self.Ticket_Technician" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ticket">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Ticket_Technician">
+        <PropertyRef Name="ticket_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AspNetUserRoles">
+    <End Role="AspNetRoles" Type="Self.AspNetRole" Multiplicity="*" />
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="NerdHerdEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRole" />
+    <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaim" />
+    <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogin" />
+    <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUser" />
+    <EntitySet Name="Categories" EntityType="Self.Category" />
+    <EntitySet Name="Proficiencies" EntityType="Self.Proficiency" />
+    <EntitySet Name="Socials" EntityType="Self.Social" />
+    <EntitySet Name="Technicians" EntityType="Self.Technician" />
+    <EntitySet Name="Technician_Social" EntityType="Self.Technician_Social" />
+    <EntitySet Name="Tickets" EntityType="Self.Ticket" />
+    <EntitySet Name="Ticket_Technician" EntityType="Self.Ticket_Technician" />
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Technician_AspNetUsers" Association="Self.FK_Technician_AspNetUsers">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="Technician" EntitySet="Technicians" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Proficiency_Technician" Association="Self.FK_Proficiency_Technician">
+      <End Role="Technician" EntitySet="Technicians" />
+      <End Role="Proficiency" EntitySet="Proficiencies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Technician_Social_Social" Association="Self.FK_Technician_Social_Social">
+      <End Role="Social" EntitySet="Socials" />
+      <End Role="Technician_Social" EntitySet="Technician_Social" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Technician_Social_Technician" Association="Self.FK_Technician_Social_Technician">
+      <End Role="Technician" EntitySet="Technicians" />
+      <End Role="Technician_Social" EntitySet="Technician_Social" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ticket_Technician_Technician" Association="Self.FK_Ticket_Technician_Technician">
+      <End Role="Technician" EntitySet="Technicians" />
+      <End Role="Ticket_Technician" EntitySet="Ticket_Technician" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ticket_Technician_Ticket" Association="Self.FK_Ticket_Technician_Ticket">
+      <End Role="Ticket" EntitySet="Tickets" />
+      <End Role="Ticket_Technician" EntitySet="Ticket_Technician" />
+    </AssociationSet>
+    <AssociationSet Name="AspNetUserRoles" Association="Self.AspNetUserRoles">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ticket_AspNetUsers" Association="NerdHerdModel.FK_Ticket_AspNetUsers">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="Ticket" EntitySet="Tickets" />
+    </AssociationSet>
+    <EntitySet Name="Ticket_Category" EntityType="NerdHerdModel.Ticket_Category" />
+    <AssociationSet Name="FK_Ticket_Category_Category" Association="NerdHerdModel.FK_Ticket_Category_Category">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="Ticket_Category" EntitySet="Ticket_Category" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ticket_Category_Ticket" Association="NerdHerdModel.FK_Ticket_Category_Ticket">
+      <End Role="Ticket" EntitySet="Tickets" />
+      <End Role="Ticket_Category" EntitySet="Ticket_Category" />
+    </AssociationSet>
+  </EntityContainer>
+  <Association Name="FK_Ticket_AspNetUsers">
+    <End Type="NerdHerdModel.AspNetUser" Role="AspNetUser" Multiplicity="0..1" />
+    <End Type="NerdHerdModel.Ticket" Role="Ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Ticket">
+        <PropertyRef Name="creator_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Ticket_Category">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ticket_id" Type="Int32" />
+    <Property Name="category_id" Type="Int32" />
+    <NavigationProperty Name="Category" Relationship="NerdHerdModel.FK_Ticket_Category_Category" FromRole="Ticket_Category" ToRole="Category" />
+    <NavigationProperty Name="Ticket" Relationship="NerdHerdModel.FK_Ticket_Category_Ticket" FromRole="Ticket_Category" ToRole="Ticket" />
+  </EntityType>
+  <Association Name="FK_Ticket_Category_Category">
+    <End Type="NerdHerdModel.Category" Role="Category" Multiplicity="0..1" />
+    <End Type="NerdHerdModel.Ticket_Category" Role="Ticket_Category" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Ticket_Category">
+        <PropertyRef Name="category_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ticket_Category_Ticket">
+    <End Type="NerdHerdModel.Ticket" Role="Ticket" Multiplicity="0..1" />
+    <End Type="NerdHerdModel.Ticket_Category" Role="Ticket_Category" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ticket">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Ticket_Category">
+        <PropertyRef Name="ticket_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

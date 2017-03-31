@@ -80,6 +80,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -196,14 +198,68 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\TechniciansController.cs" />
+    <Compile Include="Controllers\TicketsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AspNetRole.cs">
+      <DependentUpon>NerdHerdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUser.cs">
+      <DependentUpon>NerdHerdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserClaim.cs">
+      <DependentUpon>NerdHerdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserLogin.cs">
+      <DependentUpon>NerdHerdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Category.cs">
+      <DependentUpon>NerdHerdModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\NerdHerdModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NerdHerdModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NerdHerdModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NerdHerdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NerdHerdModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NerdHerdModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Proficiency.cs">
+      <DependentUpon>NerdHerdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Social.cs">
+      <DependentUpon>NerdHerdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Technician.cs">
+      <DependentUpon>NerdHerdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Technician_Social.cs">
+      <DependentUpon>NerdHerdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Ticket.cs">
+      <DependentUpon>NerdHerdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Ticket_Category.cs">
+      <DependentUpon>NerdHerdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Ticket_Technician.cs">
+      <DependentUpon>NerdHerdModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -215,7 +271,24 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <EntityDeploy Include="Models\NerdHerdModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>NerdHerdModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\NerdHerdModel.edmx.diagram">
+      <DependentUpon>NerdHerdModel.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Models\NerdHerdModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>NerdHerdModel.edmx</DependentUpon>
+      <LastGenOutput>NerdHerdModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\NerdHerdModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>NerdHerdModel.edmx</DependentUpon>
+      <LastGenOutput>NerdHerdModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
     <Content Include="Scripts\jquery-3.1.1.slim.js" />
@@ -266,6 +339,21 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Tickets\Create.cshtml" />
+    <Content Include="Views\Tickets\Delete.cshtml" />
+    <Content Include="Views\Tickets\Details.cshtml" />
+    <Content Include="Views\Tickets\Edit.cshtml" />
+    <Content Include="Views\Tickets\Index.cshtml" />
+    <Content Include="Views\Technicians\Create.cshtml" />
+    <Content Include="Views\Technicians\Delete.cshtml" />
+    <Content Include="Views\Technicians\Details.cshtml" />
+    <Content Include="Views\Technicians\Edit.cshtml" />
+    <Content Include="Views\Technicians\Index.cshtml" />
+    <Content Include="Views\Categories\Create.cshtml" />
+    <Content Include="Views\Categories\Delete.cshtml" />
+    <Content Include="Views\Categories\Details.cshtml" />
+    <Content Include="Views\Categories\Edit.cshtml" />
+    <Content Include="Views\Categories\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -273,6 +361,9 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

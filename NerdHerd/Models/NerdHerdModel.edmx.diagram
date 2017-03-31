@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1fdbe8b3c33b46c38f3385db8392cdbb" Name="Diagram1">
+        <EntityTypeShape EntityType="NerdHerdModel.AspNetRole" Width="1.5" PointX="0.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="NerdHerdModel.AspNetUserClaim" Width="1.5" PointX="5.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="NerdHerdModel.AspNetUserLogin" Width="1.5" PointX="5.25" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NerdHerdModel.AspNetUser" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NerdHerdModel.Category" Width="1.5" PointX="5.25" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NerdHerdModel.Proficiency" Width="1.5" PointX="7.5" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NerdHerdModel.Social" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NerdHerdModel.Technician" Width="1.5" PointX="5.25" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NerdHerdModel.Technician_Social" Width="1.5" PointX="7.5" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NerdHerdModel.Ticket" Width="1.5" PointX="5.25" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NerdHerdModel.Ticket_Category" Width="1.5" PointX="7.5" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NerdHerdModel.Ticket_Technician" Width="1.5" PointX="7.5" PointY="12.375" IsExpanded="true" />
+        <AssociationConnector Association="NerdHerdModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="NerdHerdModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="NerdHerdModel.FK_Technician_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="NerdHerdModel.FK_Ticket_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="NerdHerdModel.FK_Ticket_Category_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="NerdHerdModel.FK_Proficiency_Technician" ManuallyRouted="false" />
+        <AssociationConnector Association="NerdHerdModel.FK_Technician_Social_Social" ManuallyRouted="false" />
+        <AssociationConnector Association="NerdHerdModel.FK_Technician_Social_Technician" ManuallyRouted="false" />
+        <AssociationConnector Association="NerdHerdModel.FK_Ticket_Technician_Technician" ManuallyRouted="false" />
+        <AssociationConnector Association="NerdHerdModel.FK_Ticket_Category_Ticket" ManuallyRouted="false" />
+        <AssociationConnector Association="NerdHerdModel.FK_Ticket_Technician_Ticket" ManuallyRouted="false" />
+        <AssociationConnector Association="NerdHerdModel.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

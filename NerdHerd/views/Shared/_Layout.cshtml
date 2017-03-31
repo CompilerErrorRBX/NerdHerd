@@ -30,9 +30,11 @@
 			<div class="nav-wrapper">
 				<a class="brand-logo yellow-text center" href="../views/index.html"><img class="brand-image" src="~/Content/Images/NerdHerd.png" alt="..." width="36px" height="36px" /><b>Nerd Herd</b></a>
 				<ul class="left hide-on-med-and-down">
-					<li><a class="waves-effect waves-light" href="../views/index.html"><b>Home</b></a></li>
-					<li><a class="waves-effect waves-light" href="../views/technicians.html"><b>The Nerds</b></a></li>
-					<li><a class="waves-effect waves-light" href="../views/jobs.html"><b>Tickets</b></a></li>
+					<li>@Html.ActionLink("Home", "Index", "Home", routeValues: null, htmlAttributes: new { @class = "waves-effect waves-light" })</li>
+					<li>@Html.ActionLink("Tickets", "Index", "Tickets", routeValues: null, htmlAttributes: new { @class = "waves-effect waves-light" })</li>
+					<li>@Html.ActionLink("Categories", "Index", "Categories", routeValues: null, htmlAttributes: new { @class = "waves-effect waves-light" })</li>
+					@*<li><a class="waves-effect waves-light" href="../views/technicians.html"><b>The Nerds</b></a></li>
+					<li><a class="waves-effect waves-light" href="../views/jobs.html"><b>Tickets</b></a></li>*@
 				</ul> <!-- End page links -->
 				@Html.Partial("_LoginPartial")
 			</div> <!-- End nav wrapper -->
