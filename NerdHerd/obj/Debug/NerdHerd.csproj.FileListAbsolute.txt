@@ -241,5 +241,6 @@ C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.Owin.Se
 C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\obj\Debug\NerdHerd.csprojResolveAssemblyReference.cache
 C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\obj\Debug\NerdHerd.dll
 C:\Users\Stephen Martin\Documents\GitHub\NerdHerd\NerdHerd\obj\Debug\NerdHerd.pdb

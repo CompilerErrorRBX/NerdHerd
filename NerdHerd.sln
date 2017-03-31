@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdHerd", "NerdHerd\NerdHerd.csproj", "{7D067C6F-E8B5-4E85-9F7D-A9619F39AF77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdHerd.Tests", "NerdHerd.Tests\NerdHerd.Tests.csproj", "{1ED6BF4A-572B-46DF-865C-CA3A957FFE2B}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{7D067C6F-E8B5-4E85-9F7D-A9619F39AF77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D067C6F-E8B5-4E85-9F7D-A9619F39AF77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D067C6F-E8B5-4E85-9F7D-A9619F39AF77}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1ED6BF4A-572B-46DF-865C-CA3A957FFE2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1ED6BF4A-572B-46DF-865C-CA3A957FFE2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1ED6BF4A-572B-46DF-865C-CA3A957FFE2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1ED6BF4A-572B-46DF-865C-CA3A957FFE2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
